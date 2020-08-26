@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Quintessential" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Ancient Egyptian Farmer Life Simulator</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="box count"><p></p></div>
+            <div class="box add"><p>+ 15</p></div>
+            <div class="box year"><p></p></div>
+            <div class="box name"><p></p></div>
+            <div class="box social-links">
+                <ul>
+                    <li>
+                      <a
+                        href="https://github.com/fahmidamostafa/Ancient-Egyptian-Farmer-Life-Simulator"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-code"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.fahmidamostafa.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-briefcase"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/fahmida-mostafa-2a465789/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <form action="mailto:fahmida.mostafa@gmail.com">
+                        <button>
+                          <i class="fas fa-envelope"></i>
+                        </button>
+                      </form>
+                    </li>
+                    <li class="info">
+                        <i class="fas fa-info-circle"></i>
+                        <ul class="sub-list">
+                          <li>
+                            <a
+                              href="https://github.com/fahmidamostafa/egyptian_farmer_life_simulator"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              <i class="fas fa-code"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="http://www.fahmidamostafa.com/"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              <i class="fas fa-briefcase"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/in/fahmida-mostafa-2a465789/"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              <i class="fab fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <form action="mailto:fahmida.mostafa@gmail.com">
+                              <button>
+                                <i class="fas fa-envelope"></i>
+                              </button>
+                            </form>
+                          </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main-screen">
+                <div class="balance">
+                    <div class="stat stat-royal">
+                        <div class="change change-royal"></div>
+                        <div class="royal"></div>
+                        <i class="fas fa-ankh"></i>
+                    </div>
+                    <div class="stat stat-family">
+                        <div class="change change-family"></div>
+                        <div class="family"></div>
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <div class="stat stat-finance">
+                        <div class="change change-finance"></div>
+                        <div class="finance"></div>
+                        <i class="fab fa-pagelines"></i>
+                    </div>
+                    <div class="stat stat-security">
+                        <div class="change change-security"></div>
+                        <div class="security"></div>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="start-screen">
+                        <h1>
+                            Welcome to
+                            <span>Ancient Egyptian Farmer Life Simulator</span>
+                        </h1>
+                        <p>Swipe left or right to make a decision.</p>
+                        <p>Your aim is to keep the 4 indicators above in balance.</p>
+                        <p>Avoid reaching either their maximum or minimum limits.</p>
+                        <p class="begin">« Click to begin »</p>
+                    </div>
+
+                    <div class="in-game">
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="card">
+                            <div class="card-back">
+                                <div class="hover-text">
+                                  <p>
+                                      <i class="fas fa-angle-double-left"></i>
+                                      Hover
+                                      <i class="fas fa-angle-double-right"></i>
+                                  </p>
+                                </div>
+                                <div class="decision">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="card-front">
+                                <p></p>
+                            </div>
+                            <div class="card-hidden">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-over">
+                        <h1>Game Over</h1>
+                        <p>Stats</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="name-label">Name:</td>
+                                    <td class="name-value"></td>
+                                </tr>
+                                <tr>
+                                    <td class="years-label">Lasted:</td>
+                                    <td class="years-value"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h2 onclick="location.reload()">Play Again?</h2>
+                    </div>
+                </div>
+
+                <div class="floor">
+                    <p>credit to Nerial, Devolver Digital for original concept</p>
+                    <p><i class="far fa-copyright"></i> Fahmida Mostafa 2020</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="cards.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

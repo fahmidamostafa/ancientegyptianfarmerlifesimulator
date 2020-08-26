@@ -1,0 +1,667 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 34rem;
+  font-size: 125%;
+  font-family: 'Cairo', sans-serif; }
+
+p {
+  margin: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(../assets/background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main {
+  height: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .wrapper .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    width: 12rem;
+    height: 3rem;
+    background-color: #ff6347;
+    text-transform: uppercase;
+    z-index: 2; }
+    .wrapper .box.count {
+      top: 0;
+      left: 0; }
+    .wrapper .box.add {
+      display: none;
+      top: 3rem;
+      left: 0;
+      background-color: transparent;
+      -webkit-animation: blinkText 2s normal forwards ease-in-out;
+      animation: blinkText 2s normal forwards ease-in-out; }
+    .wrapper .box.name {
+      bottom: 0;
+      left: 0; }
+    .wrapper .box.year {
+      top: 0;
+      right: 0; }
+    .wrapper .box.social-links {
+      bottom: 0;
+      right: 0; }
+  .wrapper .main-screen {
+    width: 20rem;
+    height: 100%;
+    max-height: 36rem;
+    background-color: #121f1f;
+    z-index: 1; }
+    .wrapper .main-screen .balance {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      width: 100%;
+      height: 6rem;
+      padding: 1.25rem 0;
+      background-color: #121f1f; }
+      .wrapper .main-screen .balance .stat {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+        background-color: #a0522d;
+        font-size: 3rem; }
+        .wrapper .main-screen .balance .stat.blink-min-infinite {
+          -webkit-animation: blinkMinInfinite 0.75s normal infinite ease-in-out;
+          animation: blinkMinInfinite 0.75s normal infinite ease-in-out; }
+        .wrapper .main-screen .balance .stat.min-d {
+          background-color: #ff0000; }
+        .wrapper .main-screen .balance .stat .change {
+          display: none;
+          position: absolute;
+          top: -1rem;
+          width: 0.5rem;
+          height: 0.5rem;
+          background-color: #800000;
+          border-radius: 50%; }
+        .wrapper .main-screen .balance .stat .fas, .wrapper .main-screen .balance .stat .fab {
+          position: absolute;
+          z-index: 2; }
+        .wrapper .main-screen .balance .stat .royal, .wrapper .main-screen .balance .stat .family, .wrapper .main-screen .balance .stat .finance, .wrapper .main-screen .balance .stat .security {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0%;
+          background-color: #ffefd5;
+          z-index: 1; }
+          .wrapper .main-screen .balance .stat .royal.blink-max-once, .wrapper .main-screen .balance .stat .family.blink-max-once, .wrapper .main-screen .balance .stat .finance.blink-max-once, .wrapper .main-screen .balance .stat .security.blink-max-once {
+            -webkit-animation: blinkMaxOnce 0.75s normal forwards ease-in-out;
+            animation: blinkMaxOnce 0.75s normal forwards ease-in-out; }
+          .wrapper .main-screen .balance .stat .royal.blink-max-infinite, .wrapper .main-screen .balance .stat .family.blink-max-infinite, .wrapper .main-screen .balance .stat .finance.blink-max-infinite, .wrapper .main-screen .balance .stat .security.blink-max-infinite {
+            -webkit-animation: blinkMaxInfinite 0.75s normal infinite ease-in-out;
+            animation: blinkMaxInfinite 0.75s normal infinite ease-in-out; }
+          .wrapper .main-screen .balance .stat .royal.max-d, .wrapper .main-screen .balance .stat .family.max-d, .wrapper .main-screen .balance .stat .finance.max-d, .wrapper .main-screen .balance .stat .security.max-d {
+            background-color: #ff0000; }
+    .wrapper .main-screen .content {
+      position: relative;
+      width: 100%;
+      height: calc(100% - 6rem - 3rem);
+      background-color: #d2b48c;
+      border-top: 1px solid rgba(0, 0, 0, 0.4);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+      .wrapper .main-screen .content .start-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 2rem;
+        background-color: #800000;
+        color: #ffefd5;
+        z-index: 3; }
+        .wrapper .main-screen .content .start-screen h1 {
+          margin-top: 0.5rem;
+          font-size: 1.7rem;
+          text-align: center;
+          text-transform: lowercase; }
+          .wrapper .main-screen .content .start-screen h1 span {
+            display: block;
+            font-family: 'Quintessential', cursive;
+            text-transform: uppercase; }
+        .wrapper .main-screen .content .start-screen .begin {
+          margin: 1rem auto;
+          padding: 0.5rem;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+          cursor: pointer; }
+      .wrapper .main-screen .content .in-game {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+        .wrapper .main-screen .content .in-game .description {
+          height: 8.5rem;
+          padding: 1rem 2rem;
+          font-size: 0.8rem;
+          line-height: 2;
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
+          word-wrap: break-word; }
+        .wrapper .main-screen .content .in-game .card {
+          position: relative;
+          width: 15rem;
+          height: calc(100% - 8.5rem);
+          min-height: 7.25rem;
+          margin: 0 auto 1px;
+          background-color: #121f1f;
+          border-radius: 1rem;
+          -webkit-perspective: 40rem;
+          perspective: 40rem;
+          cursor: pointer; }
+          .wrapper .main-screen .content .in-game .card .card-front, .wrapper .main-screen .content .in-game .card .card-back, .wrapper .main-screen .content .in-game .card .card-hidden {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: 0.75s all ease-in-out;
+            -o-transition: 0.75s all ease-in-out;
+            transition: 0.75s all ease-in-out; }
+          .wrapper .main-screen .content .in-game .card .card-hidden {
+            left: -2.5rem;
+            width: calc(100% + 5rem);
+            background-color: transparent; }
+          .wrapper .main-screen .content .in-game .card .card-front {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: -webkit-radial-gradient(#a0522d 3px, transparent 4px), -webkit-radial-gradient(#a0522d 3px, transparent 4px), -webkit-linear-gradient(#121f1f 4px, transparent 0), -webkit-linear-gradient(45deg, transparent 74px, transparent 75px, #a0522d 75px, #a0522d 76px, transparent 77px, transparent 109px), -webkit-linear-gradient(135deg, transparent 75px, transparent 76px, #a0522d 76px, #a0522d 77px, transparent 78px, transparent 109px), #121f1f;
+            background: -o-radial-gradient(#a0522d 3px, transparent 4px), -o-radial-gradient(#a0522d 3px, transparent 4px), -o-linear-gradient(#121f1f 4px, transparent 0), -o-linear-gradient(45deg, transparent 74px, transparent 75px, #a0522d 75px, #a0522d 76px, transparent 77px, transparent 109px), -o-linear-gradient(135deg, transparent 75px, transparent 76px, #a0522d 76px, #a0522d 77px, transparent 78px, transparent 109px), #121f1f;
+            background: radial-gradient(#a0522d 3px, transparent 4px), radial-gradient(#a0522d 3px, transparent 4px), linear-gradient(#121f1f 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a0522d 75px, #a0522d 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a0522d 76px, #a0522d 77px, transparent 78px, transparent 109px), #121f1f;
+            background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+            background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+            color: #f5deb3; }
+            .wrapper .main-screen .content .in-game .card .card-front::after {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: -webkit-gradient(linear, left top, right top, from(#000000), to(transparent));
+              background: -webkit-linear-gradient(left, #000000, transparent);
+              background: -o-linear-gradient(left, #000000, transparent);
+              background: linear-gradient(to right, #000000, transparent);
+              content: '';
+              -webkit-transform: rotateY(180deg);
+              -webkit-transform-style: preserve-3d;
+              -webkit-backface-visibility: hidden; }
+          .wrapper .main-screen .content .in-game .card .card-back {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            left: 0;
+            width: 100%;
+            background: #cd853f;
+            border: 0.2rem solid #f5deb3;
+            border-radius: 1rem;
+            text-align: right;
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+            .wrapper .main-screen .content .in-game .card .card-back .hover-text {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              text-align: center; }
+              .wrapper .main-screen .content .in-game .card .card-back .hover-text p {
+                color: rgba(0, 0, 0, 0.4); }
+            .wrapper .main-screen .content .in-game .card .card-back .decision {
+              width: 100%;
+              height: 100%;
+              background-color: none;
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem; }
+            .wrapper .main-screen .content .in-game .card .card-back p {
+              padding: 1rem;
+              font-size: 0.8rem;
+              font-weight: 700;
+              line-height: 1.5;
+              text-transform: uppercase;
+              color: #121f1f; }
+      .wrapper .main-screen .content .game-over {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        height: 100%;
+        background-color: #121f1f;
+        text-transform: uppercase;
+        color: #fff;
+        -webkit-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        transition-delay: 2s;
+        z-index: 2; }
+        .wrapper .main-screen .content .game-over h2 {
+          display: block;
+          margin-top: 1.6rem;
+          color: #b22222;
+          cursor: pointer; }
+        .wrapper .main-screen .content .game-over .name-value, .wrapper .main-screen .content .game-over .years-value {
+          padding-left: 1.2rem; }
+    .wrapper .main-screen .floor {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 3rem;
+      padding: 0 2rem;
+      background-color: #121f1f;
+      font-size: 0.7rem;
+      line-height: 1.5;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .wrapper .main-screen .floor ul {
+        display: none; }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    width: 3rem;
+    height: 3rem;
+    list-style: none; }
+    ul li:hover {
+      background-color: rgba(255, 239, 213, 0.4); }
+    ul li form {
+      width: 100%;
+      height: 100%; }
+    ul li a, ul li button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      color: #121f1f; }
+    ul li:hover a, ul li:hover button {
+      color: #b22222; }
+  ul .info {
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative; }
+    ul .info:hover {
+      color: #b22222; }
+    ul .info .sub-list {
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: absolute;
+      bottom: 3rem; }
+      ul .info .sub-list li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        ul .info .sub-list li a, ul .info .sub-list li button {
+          color: #fff; }
+        ul .info .sub-list li:hover a, ul .info .sub-list li:hover button {
+          color: #800000; }
+
+@media (max-width: 900px) {
+  .wrapper .box {
+    width: 9rem; }
+  ul li {
+    display: none; }
+    ul li a {
+      color: #fff; }
+  ul .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer; }
+    ul .info:hover .sub-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.4); } }
+
+@media (max-width: 780px) {
+  .box {
+    max-width: 5rem;
+    font-size: 0.7rem; } }
+
+@media (max-width: 600px) {
+  .wrapper .box {
+    height: 1.5rem;
+    background-color: rgba(255, 99, 71, 0.6);
+    font-weight: 700;
+    color: #fff; }
+    .wrapper .box ul li {
+      height: 1.5rem; }
+    .wrapper .box ul .info .sub-list {
+      bottom: 1.5rem; }
+  .wrapper .main-screen .balance .stat .change {
+    top: 3.5rem; } }
+
+@-webkit-keyframes blinkMaxOnce {
+  0% {
+    background-color: #ffefd5; }
+  50% {
+    background-color: #cd5c5c; }
+  100% {
+    background-color: #ffefd5; } }
+
+@keyframes blinkMaxOnce {
+  0% {
+    background-color: #ffefd5; }
+  50% {
+    background-color: #cd5c5c; }
+  100% {
+    background-color: #ffefd5; } }
+
+@-webkit-keyframes blinkMaxInfinite {
+  0% {
+    background-color: #ffefd5; }
+  50% {
+    background-color: #ff0000; }
+  100% {
+    background-color: #ffefd5; } }
+
+@keyframes blinkMaxInfinite {
+  0% {
+    background-color: #ffefd5; }
+  50% {
+    background-color: #ff0000; }
+  100% {
+    background-color: #ffefd5; } }
+
+@-webkit-keyframes blinkMinInfinite {
+  0% {
+    background-color: #a0522d; }
+  50% {
+    background-color: #ff0000; }
+  100% {
+    background-color: #a0522d; } }
+
+@keyframes blinkMinInfinite {
+  0% {
+    background-color: #a0522d; }
+  50% {
+    background-color: #ff0000; }
+  100% {
+    background-color: #a0522d; } }
+
+@-webkit-keyframes blinkText {
+  0% {
+    color: transparent; }
+  25% {
+    color: #fff; }
+  75% {
+    color: #fff; }
+  100% {
+    color: transparent; } }
+
+@keyframes blinkText {
+  0% {
+    color: transparent; }
+  25% {
+    color: #fff; }
+  75% {
+    color: #fff; }
+  100% {
+    color: transparent; } }
